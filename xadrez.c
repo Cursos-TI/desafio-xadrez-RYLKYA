@@ -4,7 +4,6 @@ int main() {
     int bispo = 0;
     int torre = 0;
     
-    
     printf("Bispo:\n"); // Movimento do Bispo (while)
     printf("\n");
     
@@ -15,8 +14,10 @@ int main() {
     
     }
     
+    
     printf("\n");
     printf("\n");
+    
     
     printf("Torre:\n"); // Movimento da Torre (do-while)
     printf("\n");
@@ -26,8 +27,10 @@ int main() {
         torre++;
     } while (torre < 5);
     
+    
     printf("\n");
     printf("\n");
+    
     
     printf("Rainha:\n"); // Movimento da Rainha (for)
     printf("\n");
