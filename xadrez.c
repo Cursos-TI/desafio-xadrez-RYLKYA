@@ -8,16 +8,11 @@ int main() {
     printf("\n");
     
     while (bispo < 5) {
-    
         printf("Cima, Direita\n");
         bispo++;
-    
     }
     
-    
-    printf("\n");
-    printf("\n");
-    
+    printf("\n\n");
     
     printf("Torre:\n"); // Movimento da Torre (do-while)
     printf("\n");
@@ -27,10 +22,7 @@ int main() {
         torre++;
     } while (torre < 5);
     
-    
-    printf("\n");
-    printf("\n");
-    
+    printf("\n\n");
     
     printf("Rainha:\n"); // Movimento da Rainha (for)
     printf("\n");
@@ -39,6 +31,23 @@ int main() {
         printf("Esquerda\n");
     }    
     
-    return 0;
+    printf("\n\n");
+    
+    printf("Cavalo:\n"); // Movimento do Cavalo (loops aninhados)
+    printf("\n");
+    
+    int casasBaixo = 2;
+    int casasEsquerda = 1;
 
+    for (int i = 0; i < casasBaixo; i++) {
+        printf("Baixo\n");
+        
+        int j = 0;
+        while (i == casasBaixo - 1 && j < casasEsquerda) {
+            printf("Esquerda\n");
+            j++;
+        }
+    }
+
+    return 0;
 }
